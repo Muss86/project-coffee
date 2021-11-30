@@ -1,0 +1,34 @@
+// import fonts
+@import './fonts';
+
+// import fontawesome
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+
+// @import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import './../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import './../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+@import './../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import './../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+
+// import reset
+@import './reset';
+
+.container {
+  width: 1276px;
+  margin: 0 auto;
+}
+
+p {
+  font-family: 'Montserrat';
+  font-weight: thin;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer ul li {
+  display: inline-block;
+}
