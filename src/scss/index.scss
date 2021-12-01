@@ -13,22 +13,218 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 // import reset
 @import './reset';
 
+// import variables
+@import './variables';
+
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-size: 24px;
+  color: $brand-primary;
+}
+
 .container {
   width: 1276px;
   margin: 0 auto;
 }
 
-p {
-  font-family: 'Montserrat';
-  font-weight: thin;
+// header
+
+.header {
+  margin: 170px auto;
+}
+.header-sticky {
+  background-color: $gray-primary;
+  width: 100%;
+  padding: 35px 0 25px 0;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
 }
 
+.header .logo {
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+.header .header-nav ul {
+  text-align: center;
+
+  li {
+    display: inline-block;
+    margin: 0 42px;
+
+    a {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: $brand-primary;
+    }
+  }
+}
+
+//footer
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 80px;
+  padding-bottom: 64px;
+
+  p {
+    color: $brand-primary;
+    font-size: 18px;
+    margin-right: 5px;
+  }
+
+  hr {
+    width: 30%;
+    color: $gray-secondary;
+  }
+
+  ul li {
+    display: inline-block;
+
+    a {
+      text-align: center;
+      color: $brand-primary;
+      margin-left: 10px;
+    }
+  }
 }
 
-.footer ul li {
+// main main-header
+.main-header {
+  background: url('./../images/don-pablo-hero-image.jpg');
+  height: 800px;
+  position: relative;
+
+  .main-header-content {
+    width: 470px;
+    position: absolute;
+    top: 150px;
+    left: 435px;
+
+    h1 {
+      font-size: 60px;
+      font-weight: normal;
+      margin: 0;
+
+      .main-header-thin {
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 44px;
+      }
+
+      .main-header-bold {
+        font-weight: bold;
+      }
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: normal;
+      line-height: 29px;
+      margin-bottom: 35px;
+    }
+
+    a {
+      padding: 15px 25px;
+      background-color: #1c447b;
+      color: #c6a41e;
+      border-radius: 35px;
+      transition: background-color 0.2s linear, color 0.2s linear;
+
+      &:hover {
+        background-color: transparent;
+        color: #1c447b;
+      }
+    }
+  }
+}
+
+.catalog-preview {
+  text-align: center;
+}
+
+.product-subtitle li {
   display: inline-block;
+}
+
+.product-tiles {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  // header
+  .product-tile {
+    width: 32.131661%;
+  }
+}
+
+// main home-store-locator
+.home-store-locator {
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+    h1 {
+      font-size: 50px;
+      margin: 0;
+    }
+
+    p {
+      font-size: 22px;
+    }
+  }
+
+  .home-store-locator-content {
+    text-align: center;
+    width: 1059px;
+    margin: 0 auto;
+    line-height: 36px;
+    font-size: 24px;
+    margin-bottom: 40px;
+
+    & > p:first-of-type {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.home-store-locator-images {
+  ul {
+    text-align: center;
+
+    li {
+      display: inline-block;
+
+      img {
+        margin: 0 5px;
+      }
+    }
+  }
+}
+
+// main home-newsletter
+.home-newsletter {
+  background: url('../images/Group\ 5171.jpg');
+  height: 417px;
+
+  .hone-newsletter-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+// main home-payment
+.home-payment ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  li {
+    margin: 10px;
+  }
 }
