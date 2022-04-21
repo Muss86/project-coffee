@@ -30,327 +30,51 @@ body {
 }
 
 // header
-
-.header {
-  margin: 170px auto;
-}
-.header-sticky {
-  background-color: $gray-primary;
-  width: 100%;
-  padding: 35px 0 25px 0;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 1;
-}
-
-.header .logo {
-  text-align: center;
-  margin-bottom: 27px;
-
-  img {
-    height: 60px;
-  }
-}
-
-.header .header-nav ul {
-  text-align: center;
-
-  li {
-    display: inline-block;
-    margin: 0 42px;
-
-    a {
-      font-size: 24px;
-      text-transform: uppercase;
-      color: $brand-primary;
-    }
-  }
-}
-
-//footer
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 80px;
-  padding-bottom: 64px;
-
+.header-nav {
   p {
-    color: $brand-primary;
-    font-size: 18px;
-    margin-right: 5px;
+    display: inline;
   }
-
-  hr {
-    width: 27%;
-    color: $gray-secondary;
-  }
-
-  ul li {
-    display: inline-block;
-
-    a {
-      text-align: center;
-      color: $brand-primary;
-      margin-left: 10px;
-    }
+  ul {
+    float: right;
+    display: flex;
   }
 }
 
-// main main-header
-.main-header {
-  background: url('./../images/don-pablo-hero-image.jpg');
-  height: 750px;
-  position: relative;
-
-  .main-header-content {
-    width: 470px;
-    position: absolute;
-    top: 150px;
-    left: 435px;
-
-    h1 {
-      font-size: 60px;
-      font-weight: normal;
-      margin: 0;
-
-      .main-header-thin {
-        font-weight: 300;
-        font-size: 36px;
-        line-height: 44px;
-      }
-
-      .main-header-bold {
-        font-weight: bold;
-      }
-    }
-
-    h2 {
-      font-size: 24px;
-      font-weight: normal;
-      line-height: 29px;
-      margin-bottom: 35px;
-    }
-
-    a {
-      padding: 15px 25px;
-      background-color: #1c447b;
-      color: #c6a41e;
-      border-radius: 35px;
-      transition: background-color 0.2s linear, color 0.2s linear;
-
-      &:hover {
-        background-color: transparent;
-        color: #1c447b;
-      }
-    }
-  }
+.map {
+  margin: 0 auto 30px auto;
+  width: auto;
 }
 
-.catalog-preview {
-  text-align: center;
-
-  & header > h1 {
-    margin: 0 auto;
-
-    span {
-      margin: 0 15px;
-      font-size: 36px;
-    }
-  }
+.dateInput {
+  display: none;
 }
 
-.product-subtitle li {
+.dateInputSee {
+  display: block;
+}
+
+.button {
+  background-color: #fff;
+  color: #000;
   display: inline-block;
-}
-
-.product-tiles {
-  display: flex;
-  justify-content: space-between;
   text-align: center;
-  margin-top: 50px;
-  color: $brand-primary;
+  border: none;
+}
 
-  // header
-  .product-tile {
-    width: 32.131661%;
-    border: 1px solid $brand-primary;
-    border-radius: 25px;
+header {
+  padding: 25px 0 15px 0;
+  font-size: 30px;
+  font-family: 'Montserrat', serif;
 
-    .product-tile-details {
-      line-height: 30px;
-
-      & > p {
-        font-weight: normal;
-        font-size: 18px;
-      }
-
-      h1 {
-        font-weight: bold;
-        font-size: 25px;
-      }
-
-      li {
-        font-size: 15px;
-      }
-
-      .product-tile-pricing {
-        font-weight: bold;
-        font-size: 36px;
-        margin: 20px 0;
-        color: $brand-secondary;
-      }
-    }
-    .product-tile-controls {
-      margin: 30px 0 50px 0;
-
-      a {
-        border: 2px solid $brand-tertionary;
-        border-radius: 25px;
-        padding: 5px 15px;
-        color: $brand-tertionary;
-        transition: background-color 0.2s linear, color 0.2s linear;
-
-        &:hover {
-          background-color: $brand-tertionary;
-          color: $gray-primary;
-        }
-      }
-    }
+  .addspot {
+    margin-right: 15px;
   }
 }
 
-// main home-store-locator
-.home-store-locator {
-  margin-top: 100px;
-
-  header {
-    text-align: center;
-    margin-bottom: 30px;
-
-    h1 {
-      font-size: 36px;
-      margin: 0 auto;
-
-      span {
-        margin: 0 15px;
-      }
-    }
-
-    p {
-      font-size: 24px;
-    }
-  }
-
-  .home-store-locator-content {
-    text-align: center;
-    width: 1059px;
-    margin: 0 auto;
-    line-height: 36px;
-    font-size: 24px;
-    margin-bottom: 40px;
-
-    & > p:first-of-type {
-      margin: 50px auto;
-    }
-  }
+.location {
+  margin-bottom: 25px;
 }
 
-.home-store-locator-images {
-  ul {
-    text-align: center;
-
-    li {
-      display: inline-block;
-
-      img {
-        margin: 0 5px;
-      }
-    }
-  }
-}
-
-// main home-newsletter
-.home-newsletter {
-  background: url('../images/Group\ 5171.jpg');
-  height: 417px;
-  color: $gray-primary;
-  font-weight: 300;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-
-  .home-newsletter-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    & > h1 {
-      text-transform: uppercase;
-      font-weight: normal;
-      font-size: 40px;
-      margin-bottom: 30px;
-    }
-
-    & > p {
-      font-weight: 300;
-      font-size: 24px;
-    }
-
-    & form {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      margin: 45px 0;
-
-      input {
-        background-color: transparent;
-        width: 300px;
-        height: 50px;
-        border: transparent;
-        border-bottom: 1px solid $gray-primary;
-        margin-bottom: 20px;
-
-        &::placeholder {
-          text-align: center;
-          font-size: 18px;
-        }
-      }
-
-      .btn {
-        text-transform: uppercase;
-        font-size: 18px;
-        border-radius: 25px;
-        border: 1px solid rgba(235, 235, 235, 0.2);
-        font-weight: 300;
-        color: $gray-primary;
-        background: rgba(235, 235, 235, 0.2);
-        padding: 13px 35px;
-        transition: background-color 0.2s linear, color 0.2s linear;
-
-        &:hover {
-          background-color: $gray-primary;
-          color: $brand-primary;
-        }
-      }
-    }
-  }
-}
-
-// main home-payment
-.home-payment {
-  margin-top: 60px;
-  ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    li {
-      margin: 10px;
-    }
-  }
+.date {
+  margin-top: 30px;
 }
